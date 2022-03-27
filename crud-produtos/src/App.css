@@ -1,0 +1,84 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: #DEDFE0;
+}
+
+
+header {
+  background: #1488CC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+section {
+  background: #fff;
+  height: calc(100vh - 60px);
+  max-width: 900px;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    border-radius: 8px;
+    box-shadow: 0px 4px 64px rgba(19, 23, 61, 0.08);
+    height: calc(100vh - 60px - 40px);
+    
+    margin: 2rem auto;
+  }   
+}
+
+ul {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+ul > li.l-produto {
+  padding: 2.3rem 0;
+  padding-left: 2rem;
+  flex: 1;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+ul > li.l-produto:hover {
+  background: #DEDFE0;
+}
+
+.detalhes {
+  flex: 1;
+}
+
+.detalhes h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.detalhes p {
+  font-size: 1.6rem;
+  color: #707070;
+  margin-top: .8rem
+}
+
+ul > li.l-produto.ativo {
+  border-left: 2px solid #52b788;
+}
+ul > li.l-produto.inativo {
+  border-left: 2px solid #ff4d6d;
+}
